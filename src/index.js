@@ -35,7 +35,7 @@ import Data from './Data';
 
 const Root = () => {
   //keeps track of the current phase
-  const [currentPhase, setCurrentPhase] = useState("prolificId");
+  const [currentPhase, setCurrentPhase] = useState("consentForm");
   //keeps track of the current trial, for the Training phase
   const [trialNumber, setTrialNumber] = useState(1);
   //keeps track of the current trial, for the Test phase

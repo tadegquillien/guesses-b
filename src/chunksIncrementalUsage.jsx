@@ -35,7 +35,7 @@ import Data from './Data';
 
     // Experiment ids should be descriptive strings. For UG4/MInf/MSc projects,
     // they should include the surname of the experimenter.
-    const experimentId = "Guesses";
+    const experimentId = "Guesses-b";
 
     const condition = probCheckOrder === "first" ? "probCheckFirst" : "probCheckLast";
      

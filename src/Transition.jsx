@@ -6,6 +6,7 @@
 import { useState } from 'react';
 
 import { textStyle, buttonStyle } from './dimensions';
+import { comb_array } from './randomizedParameters';
 
 
 
@@ -41,12 +42,15 @@ const TransitionOne = (props) => {
         <p>On each page, you will see a box. 
         </p>
         <p>Imagine that you have a friend who cannot see the contents of the box.
-             All that your friend knows is that there are balls of 4 different colors inside the box, 
-             but your friend doesn't know their exact proportions.</p>
-        <p>Imagine that your friend asks you what would happen if someone randomly drew a ball from the box. What would you tell them?</p>
-        <p>We will display some possible things you could say, and we will ask you whether you think they are good descriptions of the potential outcome.</p>
-        <p>You will rate each statement on a scale from 1 (for a <b>bad</b> description) to 
-            9 (for a <b>good</b> description).</p>
+             Your friend knows the box contains red, blue, green, and yellow balls,
+              but doesn't know how many balls of each color there are.</p>
+        <p>
+        If your friend asked you what would happen if someone randomly
+drew a ball from the box, what would you tell them?
+        </p>
+        <p>We will display some possible things you could say, and we will ask you whether you think they are good answers.</p>
+        <p>You will rate each statement on a scale from 1 (for a <b>bad</b> answer) to 
+            9 (for a <b>good</b> answer).</p>
         
         <br></br>
         <button style={buttonStyle} onClick={()=>handleClick()}>click to continue</button>
@@ -59,7 +63,7 @@ const TransitionOne = (props) => {
 const TransitionTwo = (props) => {
     return(
         <div style={textStyle}>
-            <p>There will be 13 boxes in total.</p>
+            <p>There will be {comb_array.length} boxes in total.</p>
             <p>Please try to stay concentrated and engaged throughout the task.</p>
             <button style={buttonStyle} onClick={()=>{props.setCurrentPhase("test")}}>click to start the task</button>
         </div>

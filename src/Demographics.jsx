@@ -33,7 +33,7 @@ const DemographicsOne = (props) => {
     }
     return (
     <div style={textStyle}>
-        <p>Can you tell us a few words about how you decided whether a guess was good or bad?</p>
+        <p>Can you tell us a few words about how you decided whether an answer was good or bad?</p>
         <br></br>
         
                 <textarea
